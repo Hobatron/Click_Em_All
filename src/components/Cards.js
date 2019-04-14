@@ -3,6 +3,8 @@ Improvments I'd like to make:
 Edit scoreboard image to not repeat,
 larger scoreboard and larger resolutions:
 	variable line hight?
+Fix text feedback css to function properly
+	changing to green every correct guess
 */
 
 import React, {
