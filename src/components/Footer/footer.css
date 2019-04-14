@@ -1,0 +1,16 @@
+.footer {
+    width: 100vw;
+}
+
+.footer:nth-child(1) {
+    height: 62px;
+    background-color: grey;
+}
+
+.footer:nth-child(2) {
+    height: 38px;
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 25px;
+}

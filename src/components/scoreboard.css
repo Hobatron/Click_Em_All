@@ -22,3 +22,48 @@
     font-weight: bold;
     font-size: calc(8px + 1.9vw);
 }
+
+.split:nth-child(2) {
+    text-transform: capitalize;
+    width: 33%;
+}
+
+.correct {
+    -webkit-animation: greenGuess .5s;
+    animation: greenGuess .5s;
+    animation-iteration-count: 1;
+}
+
+.incorrect {
+    -webkit-animation: redGuess .5s;
+    animation: redGuess .5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes greenGuess {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: green;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes redGuess {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: white;
+    }
+}

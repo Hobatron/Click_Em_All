@@ -4,6 +4,7 @@ import React, {
 import Header from './components/Header';
 import Cards from './components/Cards';
 import './components/reset.css';
+import Footer from './components/Footer'
 
 class App extends Component {
 	render() {
@@ -11,6 +12,7 @@ class App extends Component {
 			<div>
 				<Header />
 				<Cards />
+				<Footer />
 			</div>
 		);
 	}

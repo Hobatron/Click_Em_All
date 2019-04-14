@@ -4,7 +4,7 @@ import './header.css'
 function Header() {
 	return (
 		<div className='header-wrapper'>
-			<img src="./imgs/GoTHeader.png" />
+			<img alt='Game of Thrones Banner' src='./imgs/GoTHeader.jpg' />
 		</div>
 	);
 };
