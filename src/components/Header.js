@@ -1,10 +1,12 @@
 import React from 'react';
+import './header.css'
 
 function Header() {
 	return (
-		<div className='wrapper'>
-			<img src="./imgs/GoTHeader_alt.png" />
+		<div className='header-wrapper'>
+			<img src="./imgs/GoTHeader.png" />
 		</div>
 	);
 };
+
 export default Header

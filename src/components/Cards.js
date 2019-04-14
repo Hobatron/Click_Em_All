@@ -2,6 +2,8 @@ import React, {
 	Component
 } from 'react';
 import './cards.css'
+import ScoreBoard from './ScoreBoard';
+
 
 class Card extends Component {
 
@@ -25,6 +27,10 @@ class Card extends Component {
 			],
 			isClicked: [false, false, false, false, false, false, false, false, false, false, false, false],
 		},
+		score: 0,
+		topScore: 0,
+
+		cssGuess: 0,
 
 	};
 
@@ -41,38 +47,46 @@ class Card extends Component {
 		};
 	};
 
-	lost = () => {
+	lost = (clickedArray) => {
 		console.log('get a life')
-		this.state.tracker.isClicked.forEach((v) => {
-			v = false;
-		})
+		for (let i = 0; i < clickedArray.length; i++) {
+			clickedArray[i] = false;
+		};
 		this.setState({
-
-		})
-		this.setState({
-			[this.state.imgFile.names]: this.randomizer(this.state.imgFile.names)
-		})
-	}
+			[this.state.imgFile.names]: this.randomizer(this.state.imgFile.names),
+			[this.state.tracker.isClicked]: clickedArray,
+			score: 0,
+			cssGuess: 'incorrect',
+		});
+	};
 
 	handleClick = (event) => {
-		const clickedArray = this.state.tracker.isClicked;
-		if (clickedArray[this.state.tracker.char.indexOf(event.target.getAttribute('keydata'))]) {
-			this.lost();
+		const state = this.state;
+		event.preventDefault()
+		const clickedArray = state.tracker.isClicked;
+		const indexOfClick = state.tracker.char.indexOf(event.target.getAttribute('keydata'))
+		if (clickedArray[indexOfClick]) {
+			this.lost(clickedArray);
 		} else {
-			const updatedArray = clickedArray[[this.state.tracker.char.indexOf(event.target.getAttribute('keydata'))]] = true;
+			const updatedArray = clickedArray[indexOfClick] = true;
+			let updatedTopScore = (state.score == state.topScore) ? state.topScore + 1 : state.topScore;
+			console.log(updatedTopScore)
 			this.setState({
-				[this.state.tracker.isClicked]: updatedArray
-			});
-			this.setState({
-				[this.state.imgFile.names]: this.randomizer(this.state.imgFile.names)
+				[state.tracker.isClicked]: updatedArray,
+				[state.imgFile.names]: this.randomizer(state.imgFile.names),
+				topScore: updatedTopScore,
+				score: state.score + 1,
+				cssGuess: 'correct',
 			})
 		}
 
 	}
 
 	render() {
+
 		return (
 			<div className='wrapper'>
+				<ScoreBoard score={this.state.score} addingclass={this.state.addingClass} topscore={this.state.topScore} guess={this.state.cssGuess} />
 				<div className='cardContainer'>
 					{this.state.imgFile.names.map(name => (
 						<img className='card' onClick={this.handleClick} key={name} keydata={name} src={this.state.imgFile.dir + name + this.state.imgFile.ext} />

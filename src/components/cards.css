@@ -7,7 +7,13 @@
     height: 160px;
     width: 160px;
     cursor: pointer;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
+
+
 
 .card:hover {
     transform: scale(1.10, 1.10);
@@ -17,11 +23,13 @@
 .cardContainer {
     display: inline-block;
     text-align: center;
-    padding: 50px 100px 50px 100px;
+    padding: 0px 0px 50px 0px;
     max-width: 900px;
     min-width: 440px;
 }
 
 .wrapper {
+    margin-top: 15px;
     text-align: center;
+    position: relative;
 }

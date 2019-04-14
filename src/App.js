@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import Header from './components/Header';
 import Cards from './components/Cards';
-import Footer from './components/Footer';
+import './components/reset.css';
 
 class App extends Component {
 	render() {
@@ -11,7 +11,6 @@ class App extends Component {
 			<div>
 				<Header />
 				<Cards />
-				<Footer />
 			</div>
 		);
 	}

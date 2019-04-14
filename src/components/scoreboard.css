@@ -1,0 +1,24 @@
+.score-board {
+    background-image: url('./header-bg.jpg');
+    position: fixed;
+    top: 0;
+    height: 65px;
+    width: 100vw;
+    background-size: 100%;
+    box-shadow: 0 8px 12px #222222;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.split {
+    white-space: nowrap;
+    color: aliceblue;
+    line-height: 65px;
+    font-size: calc(8px + 1.5vw);
+}
+
+.split:nth-child(1) {
+    font-weight: bold;
+    font-size: calc(8px + 1.9vw);
+}

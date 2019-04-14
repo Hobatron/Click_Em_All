@@ -1,3 +1,12 @@
 img {
-    width: 95vw;
+    width: 100vw;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.header-wrapper {
+    padding-top: 50px;
+    text-align: center;
 }
