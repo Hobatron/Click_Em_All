@@ -1,14 +1,14 @@
 {
-  "main.css": "/Click_Em_All/static/css/main.9ce10ef3.chunk.css",
-  "main.js": "/Click_Em_All/static/js/main.fb5c753a.chunk.js",
-  "main.js.map": "/Click_Em_All/static/js/main.fb5c753a.chunk.js.map",
+  "main.css": "/Click_Em_All/static/css/main.66d9314f.chunk.css",
+  "main.js": "/Click_Em_All/static/js/main.b29fe90f.chunk.js",
+  "main.js.map": "/Click_Em_All/static/js/main.b29fe90f.chunk.js.map",
   "runtime~main.js": "/Click_Em_All/static/js/runtime~main.14fa9665.js",
   "runtime~main.js.map": "/Click_Em_All/static/js/runtime~main.14fa9665.js.map",
   "static/js/2.5fd5d7c0.chunk.js": "/Click_Em_All/static/js/2.5fd5d7c0.chunk.js",
   "static/js/2.5fd5d7c0.chunk.js.map": "/Click_Em_All/static/js/2.5fd5d7c0.chunk.js.map",
   "index.html": "/Click_Em_All/index.html",
-  "precache-manifest.d330bf56deeadcacab8e0e09bf0973cc.js": "/Click_Em_All/precache-manifest.d330bf56deeadcacab8e0e09bf0973cc.js",
+  "precache-manifest.8a20add8904b0c6ba1f6b3de16c81f07.js": "/Click_Em_All/precache-manifest.8a20add8904b0c6ba1f6b3de16c81f07.js",
   "service-worker.js": "/Click_Em_All/service-worker.js",
-  "static/css/main.9ce10ef3.chunk.css.map": "/Click_Em_All/static/css/main.9ce10ef3.chunk.css.map",
+  "static/css/main.66d9314f.chunk.css.map": "/Click_Em_All/static/css/main.66d9314f.chunk.css.map",
   "static/media/scoreboard.css": "/Click_Em_All/static/media/header-bg.31d606cc.jpg"
 }
